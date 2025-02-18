@@ -17,12 +17,12 @@ Program conception, final development and troubleshooting was performed by James
 ## Scripts
 
 ### CLIPSHAPE.nf
-- **Location:** `/workspaces/icSHAPE_iCLIP/icSHAPE_CLIP_Python/CLIPSHAPE.nf`
+- **Location:** `icSHAPE_iCLIP/icSHAPE_CLIP_Python/CLIPSHAPE.nf`
 - **Description:** Nextflow pipeline that orchestrates the analysis workflow. It manages data input, triggers downstream processing (including MAPSHAPE.py), and handles output aggregation. Ideal for scalable execution.
 - **Usage:** Run using Nextflow; ensure Nextflow is installed and properly configured.
 
 ### MAPSHAPE.py
-- **Location:** `/workspaces/icSHAPE_iCLIP/icSHAPE_CLIP_Python/MAPSHAPE.py`
+- **Location:** `icSHAPE_iCLIP/icSHAPE_CLIP_Python/MAPSHAPE.py`
 - **Description:** Python script that processes icSHAPE profiles. It loads in vitro and in vivo experimental data along with RNAplFold and shuffle datasets, combines columns from multiple files, computes median profiles, and generates a comparative plot.
 - **Usage:** Run with required command-line arguments:
   ```bash
@@ -30,9 +30,9 @@ Program conception, final development and troubleshooting was performed by James
   ```
 
 ### CLIPSHAPE_test.py
-- **Location:** `/workspaces/icSHAPE_iCLIP/tests/CLIPSHAPE_test.py`
+- **Location:** `icSHAPE_iCLIP/tests/CLIPSHAPE_test.py`
 - **Description:** Unit tests for the CLIPSHAPE module. Tests include module import verification and placeholder for future functionality tests.
 - **Usage:** Run via:
   ```bash
-  python -m unittest /workspaces/icSHAPE_iCLIP/tests/CLIPSHAPE_test.py
+  python -m unittest icSHAPE_iCLIP/tests/CLIPSHAPE_test.py
   ```
